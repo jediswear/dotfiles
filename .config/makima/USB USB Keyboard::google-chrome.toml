@@ -1,0 +1,9 @@
+# Run omarchy-restart-makima after any changes
+
+[remap]
+KEY_LEFTALT-KEY_W = ["KEY_LEFTCTRL", "KEY_W"]
+KEY_LEFTALT-KEY_RIGHT = ["KEY_LEFTCTRL", "KEY_TAB"]
+KEY_LEFTALT-KEY_LEFT = ["KEY_LEFTCTRL", "KEY_LEFTSHIFT", "KEY_TAB"]
+
+[settings]
+GRAB_DEVICE = "true"
