@@ -12,8 +12,14 @@
     "network",
     "pulseaudio",
     "cpu",
-    "battery"
+    "battery",
+    "hyprland/language"
   ],
+  "hyprland/language": {
+    "format": "{}",
+    "format-us": "US",
+    "format-ru": "RU"
+  },
   "hyprland/workspaces": {
     "on-click": "activate",
     "format": "{icon}",
