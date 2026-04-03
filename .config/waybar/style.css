@@ -1,10 +1,6 @@
 @import "../omarchy/current/theme/waybar.css";
 
 * {
-  background-color: @background;
-  color: @foreground;
-
-  border: none;
   border-radius: 0;
   min-height: 0;
   font-family: 'JetBrainsMono Nerd Font';
@@ -102,4 +98,10 @@ tooltip {
 #language {
   min-width: 12px;
   margin: 0 7.5px;
+}
+
+#waybar {
+  background-color: @background;
+  color: @foreground;
+  border-bottom: 1px solid #454540;
 }
