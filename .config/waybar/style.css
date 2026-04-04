@@ -103,5 +103,5 @@ tooltip {
 #waybar {
   background-color: @background;
   color: @foreground;
-  border-bottom: 1px solid #454540;
+  border-top: 1px solid #454540;
 }
