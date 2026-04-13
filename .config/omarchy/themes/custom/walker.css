@@ -1,5 +1,6 @@
 window * {
-    font-size: 12px;
+    font-size: 14px;
+    font-family: "Segoe UI";
 }
 
 window .box-wrapper {
