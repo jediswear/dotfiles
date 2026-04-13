@@ -1,2 +1,3 @@
 .idea
 .local/share/fonts/*
+.config/omarchy/themes/**/*.jpg
