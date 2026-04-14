@@ -24,7 +24,10 @@
     "icon-size": 12,
     "on-click": "activate",
     "on-click-right": "minimize",
-    "format": "{icon}"
+    "format": "{icon}",
+    "app_ids-mapping": {
+      "jetbrains-webstorm":	"jetbrains-webstorm-887736e9-6d32-41cc-b507-4fc86f002086"
+    }
   },
   "hyprland/workspaces": {
     "on-click": "activate",
