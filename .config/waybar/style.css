@@ -103,11 +103,10 @@ tooltip {
 }
 
 #waybar {
-  background-color: @background;
+  background-color: alpha(#9f9f8f, 0.4);
   color: @foreground;
-  border-bottom: 1px solid @hover-background;
 }
 
 button {
-  border-color: transparent;
+  border: none;
 }
