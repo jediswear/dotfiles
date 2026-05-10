@@ -107,6 +107,10 @@ tooltip {
   color: @foreground;
 }
 
-button {
+#taskbar button {
   border: none;
+}
+
+#taskbar button.active {
+  border-bottom: 2px solid @accent;
 }
