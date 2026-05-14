@@ -26,8 +26,13 @@
     "on-click-right": "minimize",
     "format": "{icon}",
     "app_ids-mapping": {
-      "jetbrains-webstorm":	"jetbrains-webstorm-887736e9-6d32-41cc-b507-4fc86f002086"
-    }
+      "google-chrome": "10_google-chrome",
+      "jetbrains-webstorm": "20_jetbrains-webstorm-887736e9-6d32-41cc-b507-4fc86f002086",
+      "obsidian": "30_obsidian",
+      "Slack": "40_slack",
+      "com.mitchellh.ghostty": "50_com.mitchellh.ghostty"
+    },
+    "sort-by-app-id": true
   },
   "hyprland/workspaces": {
     "on-click": "activate",
