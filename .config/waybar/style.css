@@ -114,3 +114,14 @@ tooltip {
 #taskbar button.active {
   border-bottom: 2px solid @accent;
 }
+
+#custom-weather {
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+}
+
+#custom-weather.unavailable {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+}
