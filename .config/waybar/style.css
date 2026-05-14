@@ -17,11 +17,30 @@
   margin-right: 8px;
 }
 
+#workspaces {
+  padding: 12px;
+  min-width: 98px;
+}
+
+#workspaces * {
+  font-size: 0;
+}
+
 #workspaces button {
   all: initial;
-  padding: 0 6px;
-  margin: 0 1.5px;
-  min-width: 9px;
+  min-width: 8px;
+  min-height: 8px;
+  padding: 0;
+  margin-right: 8px;
+  font-size: 0;
+  border-radius: 4px;
+  transition: 0.1s;
+  background: @theme_text_color;
+}
+
+#workspaces button.active {
+  min-width: 22px;
+  transition: 0.3s;
 }
 
 #workspaces button.empty {
