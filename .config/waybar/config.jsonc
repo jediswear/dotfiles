@@ -29,12 +29,14 @@
       "google-chrome": "10_google-chrome",
       "jetbrains-webstorm": "20_jetbrains-webstorm-887736e9-6d32-41cc-b507-4fc86f002086",
       "obsidian": "30_obsidian",
-      "Slack": "40_slack",
-      "com.mitchellh.ghostty": "50_com.mitchellh.ghostty"
+      "slack": "40_slack",
+      "org.telegram.desktop._81a1e5875067e426e389b82097c90de8": "41_org.telegram.desktop._81a1e5875067e426e389b82097c90de8",
+      "com.mitchellh.ghostty": "com.mitchellh.ghostty"
     },
     "sort-by-app-id": true
   },
   "hyprland/workspaces": {
+    "icon-size": 2,
     "on-click": "activate",
     "format": "{icon}",
     "format-icons": {

@@ -1,6 +1,7 @@
 @import "../omarchy/current/theme/waybar.css";
 
 @define-color hover-background #454540;
+@define-color background1 #9f9f8f;
 
 * {
   border-radius: 0;
@@ -122,7 +123,7 @@ tooltip {
 }
 
 #waybar {
-  background-color: alpha(#9f9f8f, 0.4);
+  background-color: alpha(@background1, 0.4);
   color: @foreground;
 }
 
