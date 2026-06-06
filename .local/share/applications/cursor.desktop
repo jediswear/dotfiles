@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Cursor
+Exec=/opt/cursor/cursor.AppImage  %U
+Icon=cursor
+Type=Application
+StartupNotify=true
+Terminal=false
+MimeType=x-scheme-handler/cursor;
+Icon=cursor
+X-Icon-Path=/home/kinggizzard/.local/share/icons/hicolor/scalable/apps/cursor.svg
