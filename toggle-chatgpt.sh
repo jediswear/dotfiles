@@ -14,7 +14,7 @@ ADDRESS=$(echo "$WINDOW_JSON" | jq -r '.address')
 if [[ "$WORKSPACE" == special:* ]]; then
   # Hidden in scratchpad → bring to current workspace and focus
   ACTIVE_WS_ID=$(hyprctl activeworkspace -j | jq -r '.id')
-  hyprctl dispatch movetoworkspace "$ACTIVE_WS_ID,address:$ADDRESS"
+  hyprctl dispatch movetoworkspacesilent "$ACTIVE_WS_ID,address:$ADDRESS"
   hyprctl dispatch focuswindow "address:$ADDRESS"
 else
   # Visible → send to scratchpad (hides it)
