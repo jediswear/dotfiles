@@ -1,0 +1,34 @@
+hl.config({
+  general = {
+    gaps_in = 0,
+    gaps_out = 0,
+    border_size = 0,
+    col = {
+      inactive_border = "rgba(75737360)",
+      active_border = "rgba(0078d4ff)",
+    },
+  },
+
+  decoration = {
+    rounding = 0,
+
+    blur = {
+      size = 12,
+      passes = 3,
+      noise = 0.03,
+      vibrancy = 0.7,
+      vibrancy_darkness = 1,
+      contrast = 1.5,
+    },
+
+    shadow = {
+      enabled = false,
+    },
+
+    dim_inactive = true,
+    dim_strength = 0.3,
+  },
+})
+
+-- mako blur
+hl.layer_rule({ match = { namespace = "notifications" }, blur = true, ignore_alpha = 0.3 })
