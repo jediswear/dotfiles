@@ -1,0 +1,59 @@
+# Omarchy shell surfaces. Colors derive from colors.toml; sizes and the
+# typographic scale come from the keys below. Themes can ship
+# themes/<name>/shell.toml to replace this generated file.
+
+[bar]
+background                = "#9d9d8d"
+background-alpha          = 0.4
+text                      = "#dbdbdb"
+
+[hyprland]
+
+[controls]
+
+[spacing]
+
+[font]
+
+[popups]
+border                    = "#bfbfbf"
+border-alpha              = 0.3
+border-width              = 1
+
+[tooltip]
+text                      = "#dbdbdb"
+
+border                    = "#bfbfbf"
+border-alpha              = 0.3
+border-width              = 1
+
+[notifications]
+border                    = "#bfbfbf"
+border-alpha              = 0.3
+border-width              = 1
+
+[launcher]
+
+[menu]
+background                = "#323332"
+background-alpha          = 0.8
+text                      = "#dbdbdb"
+# scrim                     = "#1c1c1c"
+scrim-alpha               = 0.3
+selected-background       = "#9a9e97"
+selected-background-alpha = 0.1
+selected-text             = "#dbdbdb"
+
+# Card border
+border                    = "#bfbfbf"
+border-alpha              = 0.2
+border-width              = 1
+
+# Highlighted row border
+selected-border-width     = 0
+
+[polkit]
+
+[lock]
+
+[image-picker]

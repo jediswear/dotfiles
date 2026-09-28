@@ -20,6 +20,7 @@ hl.config({
       vibrancy = 0.7,
       vibrancy_darkness = 1,
       contrast = 1.5,
+      brightness = 0.6
     },
 
     shadow = {
@@ -36,3 +37,6 @@ hl.layer_rule({ match = { namespace = "notifications" }, blur = true, ignore_alp
 
 -- omarchy menu blur (ignore_alpha > scrim-alpha so only the card is blurred)
 hl.layer_rule({ match = { namespace = "omarchy-menu" }, blur = true, ignore_alpha = 0.6 })
+
+-- omarchy bar blur
+hl.layer_rule({ match = { namespace = "omarchy-bar" }, blur = true })
