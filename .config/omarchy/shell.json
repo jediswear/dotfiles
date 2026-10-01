@@ -24,7 +24,7 @@
       ],
       "left": [
         {
-          "id": "omarchy.menu"
+          "id": "kinggizzard.menu"
         },
         {
           "id": "omarchy.workspaces"
@@ -64,7 +64,9 @@
   "plugins": [],
   "version": 1,
   "cloneSourceRestores": [
+    "kinggizzard.menu"
   ],
   "disabledPlugins": [
+    "omarchy.menu"
   ]
 }
