@@ -13,6 +13,7 @@ hl.config({
     rounding = 0,
 
     blur = {
+      enabled = true,
       size = 12,
       passes = 3,
       noise = 0.03,
@@ -32,3 +33,6 @@ hl.config({
 
 -- mako blur
 hl.layer_rule({ match = { namespace = "notifications" }, blur = true, ignore_alpha = 0.3 })
+
+-- omarchy menu blur (ignore_alpha > scrim-alpha so only the card is blurred)
+hl.layer_rule({ match = { namespace = "omarchy-menu" }, blur = true, ignore_alpha = 0.6 })
