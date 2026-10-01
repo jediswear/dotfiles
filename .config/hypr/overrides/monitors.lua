@@ -24,8 +24,5 @@ o.window({ class = "jetbrains-webstorm", float = true }, { no_follow_mouse = fal
 -- blur walker
 hl.layer_rule({ match = { namespace = "walker" }, blur = true, ignore_alpha = 0.5 })
 
--- style floating windows
-o.window({ float = true }, { rounding = 8, border_size = 1 })
-
 -- blur waybar
 hl.layer_rule({ match = { namespace = "waybar" }, blur = true })

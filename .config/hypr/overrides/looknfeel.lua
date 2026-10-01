@@ -10,7 +10,7 @@ hl.config({
   },
 
   decoration = {
-    rounding = 0,
+    rounding = 8,
 
     blur = {
       enabled = true,
@@ -40,3 +40,9 @@ hl.layer_rule({ match = { namespace = "omarchy-menu" }, blur = true, ignore_alph
 
 -- omarchy bar blur
 hl.layer_rule({ match = { namespace = "omarchy-bar" }, blur = true })
+
+-- disable rounding for all windows
+o.window(".*", { rounding = 0 })
+
+-- style floating windows
+o.window({ float = true }, { rounding = 8, border_size = 1 })
