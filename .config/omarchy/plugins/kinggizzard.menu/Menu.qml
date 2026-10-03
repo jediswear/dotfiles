@@ -98,9 +98,9 @@ Item {
   readonly property real rowReservedBorderLeft: Border.left(selectedBorderSpec)
   readonly property real rowReservedBorderRight: Border.right(selectedBorderSpec)
   readonly property int cornerRadius: 8
-  property int contentMargin: Style.spacing.panelPadding
-  property int headerHeight: Math.max(Style.space(34), Style.font.title + Style.spacing.controlPaddingY * 2)
-  property int contentSpacing: Style.spacing.md
+  property int contentMargin: Style.spacing.lg * 2
+  property int headerHeight: 50
+  property int contentSpacing: Style.spacing.lg * 2
   property int baseRowHeight: Math.max(Style.space(50), Style.font.body + Style.spacing.rowPaddingX * 2)
   property int detailRowHeight: Math.max(Style.space(58), Style.font.body + Style.font.caption + Style.spacing.rowPaddingX * 2)
   // How much of the first hidden row stays visible at the fold — enough to
@@ -1150,12 +1150,14 @@ Item {
           width: parent.width
           height: root.headerHeight
           radius: root.cornerRadius
-          color: "transparent"
+          color: Qt.rgba(0x1c / 255, 0x1c / 255, 0x1a / 255, 0.8)
 
           Text {
             textFormat: Text.PlainText
             anchors.left: parent.left
             anchors.right: parent.right
+            anchors.leftMargin: Style.spacing.huge
+            anchors.rightMargin: Style.spacing.xxl
             anchors.verticalCenter: parent.verticalCenter
             text: root.filterText || (root.dmenuActive ? (root.dmenuPrompt + "…") : ((root.item(root.activeMenu) ? (root.item(root.activeMenu).title || root.item(root.activeMenu).label) : "Go") + "…"))
             color: root.foreground
