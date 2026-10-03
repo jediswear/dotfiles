@@ -22,3 +22,16 @@ o.bind("CTRL + SHIFT + SPACE", "Switch keyboard layout", "hyprctl switchxkblayou
 
 hl.unbind("SUPER + SHIFT + N")
 o.bind("SUPER + SHIFT + N", "Editor", "webstorm")
+
+-- Keyboard passthrough for Citrix/VMs: disables all other bindings until exited
+o.bind("SUPER + GRAVE", "Enter keyboard passthrough (Citrix/VMs)", function()
+  hl.dispatch(hl.dsp.submap("passthrough"))
+  hl.dispatch(hl.dsp.exec_cmd("notify-send 'Keyboard passthrough ON' 'Press SUPER+SHIFT+\\` to exit'"))
+end)
+
+hl.define_submap("passthrough", function()
+  hl.bind("SUPER + SHIFT + GRAVE", function()
+    hl.dispatch(hl.dsp.submap("reset"))
+    hl.dispatch(hl.dsp.exec_cmd("notify-send 'Keyboard passthrough OFF'"))
+  end)
+end)
