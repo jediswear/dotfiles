@@ -19,6 +19,7 @@ hl.unbind("SUPER + CTRL + B")
 o.bind("SUPER + A", "Bluetooth controls", "omarchy-shell shell toggle omarchy.bluetooth")
 
 o.bind("CTRL + SHIFT + SPACE", "Switch keyboard layout", "hyprctl switchxkblayout all next")
+o.bind("CTRL + SHIFT + ALT + SPACE", "Reset keyboard layout", "hyprctl switchxkblayout all 0")
 
 hl.unbind("SUPER + SHIFT + N")
 o.bind("SUPER + SHIFT + N", "Editor", "webstorm")
