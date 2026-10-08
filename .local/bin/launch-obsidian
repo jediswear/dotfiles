@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Launch Obsidian
+
+exec uwsm-app -- obsidian

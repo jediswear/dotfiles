@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Launch Telegram
+
+exec uwsm-app -- Telegram
