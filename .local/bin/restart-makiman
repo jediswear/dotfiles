@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Restart the makiman key remapping service
+
+exec systemctl restart makiman.service
