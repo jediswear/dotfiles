@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "custom.apps",
+  "name": "Running apps",
+  "version": "1.0.0",
+  "author": "Vadym Zaiets",
+  "description": "Running app icons grouped by workspace, per monitor",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Running apps",
+    "description": "Running app icons grouped by workspace, per monitor",
+    "category": "Compositor",
+    "allowMultiple": false
+  }
+}
