@@ -1,0 +1,12 @@
+**/.claude/settings.local.json
+
+**/.claude/.cc-writes/
+
+certificates
+.idea
+.vscode
+.cursor
+cert.pem
+key.pem
+.env
+.mcp.json
