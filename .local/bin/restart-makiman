@@ -2,4 +2,8 @@
 
 # Restart the makiman key remapping service
 
-exec systemctl restart makiman.service
+omarchy-osd -i " " -m "Restarting makiman…" -d 0
+systemctl restart makiman.service
+sleep 2
+
+omarchy-shell -q osd close
