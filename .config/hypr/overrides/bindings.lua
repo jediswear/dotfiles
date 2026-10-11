@@ -23,14 +23,17 @@ o.bind("CTRL + SHIFT + ALT + SPACE", "Reset keyboard layout", "hyprctl switchxkb
 
 -- Open terminal, browser, Obsidian, WebStorm, Telegram and restart makiman service.
 hl.unbind("SUPER + P")
-o.bind("SUPER + P", "Prepare work session", "omarchy-launch-terminal & omarchy-launch-browser & launch-obsidian & webstorm & launch-telegram & restart-makiman")
+o.bind("SUPER + P", "Prepare work session", "omarchy-launch-terminal & omarchy-launch-browser & launch-obsidian & launch-webstorm & launch-telegram & restart-makiman")
 
 o.bind("SUPER + M", "Restart makiman", "restart-makiman")
 
 o.bind("SUPER + SHIFT + T", "Telegram", "launch-telegram")
 
+hl.unbind("SUPER + SHIFT + O")
+o.bind("SUPER + SHIFT + O", "Obsidian", "launch-obsidian")
+
 hl.unbind("SUPER + SHIFT + N")
-o.bind("SUPER + SHIFT + N", "Editor", "webstorm")
+o.bind("SUPER + SHIFT + N", "Editor", "launch-webstorm")
 
 -- Keyboard passthrough for Citrix/VMs: disables all other bindings until exited
 o.bind("SUPER + GRAVE", "Enter keyboard passthrough (Citrix/VMs)", function()

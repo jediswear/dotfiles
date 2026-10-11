@@ -2,4 +2,4 @@
 
 # Launch Obsidian
 
-exec uwsm-app -- obsidian
+exec launch-with-osd -c md.obsidian.Obsidian -n Obsidian obsidian

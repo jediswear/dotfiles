@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# Launch an app and show an OSD until its window appears
+# Usage: launch-with-osd -c <window-class> -n <name> <command...>
+
+class=""
+name=""
+
+while (($#)); do
+  case $1 in
+    -c) class="$2"; shift 2 ;;
+    -n) name="$2"; shift 2 ;;
+    *) break ;;
+  esac
+done
+
+omarchy-osd -i "󱓞" -m "Launching $name…" -d 0
+setsid uwsm-app -- "$@" &
+
+# Give up after 15s so the OSD never gets stuck
+for ((i = 0; i < 15; i++)); do
+  hyprctl clients -j | jq -e --arg class "$class" 'any(.[]; .class == $class)' >/dev/null && break
+  sleep 1
+done
+
+omarchy-shell -q osd close

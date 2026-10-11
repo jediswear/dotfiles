@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Launch WebStorm
+
+exec launch-with-osd -c jetbrains-webstorm -n WebStorm webstorm
