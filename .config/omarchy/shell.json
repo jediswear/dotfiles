@@ -61,12 +61,18 @@
     "lock": 600,
     "screensaver": 300
   },
-  "plugins": [],
+  "plugins": [
+    {
+      "id": "custom.lock"
+    }
+  ],
   "version": 1,
   "cloneSourceRestores": [
-    "custom.menu"
+    "custom.menu",
+    "custom.lock"
   ],
   "disabledPlugins": [
-    "omarchy.menu"
+    "omarchy.menu",
+    "omarchy.lock"
   ]
 }
