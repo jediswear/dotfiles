@@ -8,10 +8,10 @@ for workspace = 2, 6 do
 end
 
 o.window("google-chrome", { workspace = "1", maximize = true })
-o.window("jetbrains-webstorm", { workspace = "2" })
+o.window("jetbrains-.*", { workspace = "2" })
 o.window("md.obsidian.Obsidian", { workspace = "3", maximize = true })
-o.window("com.mitchellh.ghostty", { workspace = "5" })
-o.window("org\\.telegram.+", { workspace = "4" })
+o.window("foot", { workspace = "5" })
+o.window("org.telegram.desktop", { workspace = "4" })
 o.window("slack", { workspace = "4" })
 o.window("discord", { workspace = "4" })
 o.window("cursor", { workspace = "6" })
