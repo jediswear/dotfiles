@@ -1,0 +1,10 @@
+[Icon Theme]
+Name=Icons override
+Inherits=Yaru-purple,hicolor
+Directories=scalable/apps
+
+[scalable/apps]
+Size=48
+Type=Scalable
+MinSize=8
+MaxSize=512
