@@ -26,6 +26,7 @@ require("hypr.overrides.input")
 require("hypr.overrides.bindings")
 require("hypr.overrides.looknfeel")
 require("hypr.overrides.monitors")
+require("hypr.overrides.autostart")
 
 -- Toggle config flags dynamically.
 require("default.hypr.toggles")

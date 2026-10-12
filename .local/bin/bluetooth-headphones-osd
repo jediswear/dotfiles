@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Show an OSD when Bluetooth headphones connect or disconnect
+
+gdbus monitor --system --dest org.bluez |
+  while read -r line; do
+    case $line in
+      *"'org.bluez.Device1'"*"'Connected': <true>"*) state="Connected" ;;
+      *"'org.bluez.Device1'"*"'Connected': <false>"*) state="Disconnected" ;;
+      *) continue ;;
+    esac
+
+    # /org/bluez/hci0/dev_AA_BB_CC_DD_EE_FF: ... -> AA:BB:CC:DD:EE:FF
+    address=${line%%:*}
+    address=${address##*dev_}
+    address=${address//_/:}
+
+    info=$(bluetoothctl info "$address")
+    [[ $info == *"Icon: audio-head"* ]] || continue
+
+    name=$(sed -n 's/^\s*Alias: //p' <<<"$info")
+    omarchy-osd -i "󰋋" -m "$state $name"
+  done
