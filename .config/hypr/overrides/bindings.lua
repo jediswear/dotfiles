@@ -23,7 +23,18 @@ o.bind("CTRL + SHIFT + ALT + SPACE", "Reset keyboard layout", "hyprctl switchxkb
 
 -- Open terminal, browser, Obsidian, WebStorm, Telegram and restart makiman service.
 hl.unbind("SUPER + P")
-o.bind("SUPER + P", "Prepare work session", "omarchy-launch-terminal & omarchy-launch-browser & launch-obsidian & launch-webstorm & launch-telegram & restart-makiman")
+o.bind("SUPER + P", "Prepare work session", function()
+  -- Move the terminal to workspace 5 once its window has opened
+  local subscription
+  subscription = hl.on("window.open", function(window)
+    if window.class == "foot" then
+      subscription:remove()
+      hl.dispatch(hl.dsp.window.move({ workspace = "5", follow = false, window = window }))
+    end
+  end)
+
+  hl.dispatch(hl.dsp.exec_cmd("restart-makiman & omarchy-launch-browser; launch-obsidian; launch-telegram; launch-webstorm; omarchy-launch-terminal"))
+end)
 
 o.bind("SUPER + M", "Restart makiman", "restart-makiman")
 
