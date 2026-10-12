@@ -2,4 +2,5 @@
 
 # Launch Obsidian
 
-exec launch-with-osd -c md.obsidian.Obsidian -n Obsidian obsidian
+launch-with-osd -c md.obsidian.Obsidian -n Obsidian obsidian "obsidian://open?vault=minds"
+uwsm-app -- obsidian "obsidian://open?vault=dev"
