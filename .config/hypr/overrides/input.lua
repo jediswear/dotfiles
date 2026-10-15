@@ -3,6 +3,8 @@ local machine = require("hypr.overrides.machine")
 hl.config({
   input = {
     kb_layout = "us,ru",
+    -- Swap Option/Command on the Mac keyboard so the bottom row reads Ctrl, Super, Alt like a PC keyboard
+    kb_options = machine.apple_silicon and "compose:caps,shift:both_capslock_cancel,altwin:swap_lalt_lwin" or nil,
 
     sensitivity = machine.apple_silicon and 0 or -0.86,
     touchpad = {
