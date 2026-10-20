@@ -46,3 +46,7 @@ o.window(".*", { rounding = 0 })
 
 -- style floating windows
 o.window({ float = true }, { rounding = 8, border_size = 1 })
+
+-- Slide workspaces into place after a swipe instead of snapping
+-- speed is in 100ms units: higher is slower
+hl.animation({ leaf = "workspaces", enabled = true, speed = 6, bezier = "easeOutQuint", style = "slide" })
