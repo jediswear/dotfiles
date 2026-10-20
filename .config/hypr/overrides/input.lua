@@ -1,8 +1,10 @@
+local machine = require("hypr.overrides.machine")
+
 hl.config({
   input = {
     kb_layout = "us,ru",
 
-    sensitivity = -0.86,
+    sensitivity = machine.apple_silicon and 0 or -0.86,
     touchpad = {
       natural_scroll = true,
     },
