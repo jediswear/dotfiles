@@ -3,6 +3,9 @@ hl.config({
     kb_layout = "us,ru",
 
     sensitivity = -0.86,
+    touchpad = {
+      natural_scroll = true,
+    },
   },
 
   misc = {
